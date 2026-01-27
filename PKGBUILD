@@ -1,5 +1,5 @@
 # Maintainer: DarkXero <info@techxero.com>
-pkgname=calamarex-nv-cfg
+pkgname=calamaresx-nv-cfg
 _destname1="/etc"
 pkgver=3.4.1
 pkgrel=6
