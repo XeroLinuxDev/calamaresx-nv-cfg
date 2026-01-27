@@ -1,0 +1,300 @@
+# XeroLinux Software Selection
+# User-selectable packages with humanized names and descriptions
+# Format: name = display name, package = actual package for pacman
+---
+- name: "Web Browsers"
+  description: "Browse the internet with privacy and speed"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: false
+  packages:
+    - name: "Floorp"
+      package: floorp
+      description: "Privacy-focused Firefox fork with enhanced customization"
+    - name: "Mozilla Firefox"
+      package: firefox
+      description: "Fast, private and secure web browser"
+    - name: "FileZilla"
+      package: filezilla
+      description: "Cross-platform FTP, FTPS and SFTP client"
+    - name: "Brave Browser"
+      package: brave-bin
+      description: "Privacy-first browser with built-in ad blocking"
+    - name: "LibreWolf"
+      package: librewolf
+      description: "Privacy-hardened Firefox fork without telemetry"
+    - name: "Vivaldi"
+      package: vivaldi-meta
+      description: "Feature-rich, customizable Chromium-based browser"
+    - name: "Tor Browser"
+      package: tor-browser-bin
+      description: "Anonymous browsing through the Tor network"
+    - name: "Mullvad Browser"
+      package: mullvad-browser-bin
+      description: "Privacy-focused browser by Mullvad VPN"
+    - name: "Helium Browser"
+      package: helium-browser-bin
+      description: "Private &, fast web browser based on Chromium"
+    - name: "Zen Browser"
+      package: zen-browser-bin
+      description: "Performance oriented Firefox-based web browser"
+    - name: "Ungoogled Chromium"
+      package: ungoogled-chromium-bin
+      description: "Chromium without Google services"
+
+- name: "BTRFS Support"
+  description: "In case of BTFRS select preferred method"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: false
+  packages:
+    - name: "Snapper Support"
+      package: snapper-support
+      description: "Snapper with snap-pac and grub-btrfs support"
+    - name: "BTRFS Assistant"
+      package: btrfs-assistant
+      description: "Manage BTRFS subvolumes and Snapper snapshots"
+    - name: "Timeshift Autosnap"
+      package: timeshift-autosnap
+      description: "Runs before package upgrade using Pacman hook."
+
+- name: "VPN Clients"
+  description: "Secure your internet connection with VPN services"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: false
+  packages:
+    - name: "ExpressVPN"
+      package: expressvpn
+      description: "Fast and secure VPN service"
+    - name: "Mozilla VPN"
+      package: mozillavpn
+      description: "Privacy-focused VPN by Mozilla"
+    - name: "ProtonVPN"
+      package: proton-vpn-cli
+      description: "Secure VPN by the makers of ProtonMail"
+
+- name: "Social & Communication"
+  description: "Stay connected with friends and communities"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: false
+  packages:
+    - name: "ZapZap"
+      package: zapzap
+      description: "WhatsApp desktop client for Linux"
+    - name: "Tokodon"
+      package: tokodon
+      description: "Mastodon client for KDE Plasma"
+    - name: "Discord"
+      package: discord
+      description: "Voice, video and text chat platform"
+    - name: "Element"
+      package: element-desktop
+      description: "Secure Matrix messenger client"
+    - name: "Telegram"
+      package: telegram-desktop
+      description: "Fast and secure messaging app"
+    - name: "Ferdium"
+      package: ferdium-bin
+      description: "All-in-one messaging app organizer"
+
+- name: "Office Suite"
+  description: "Create documents, spreadsheets and presentations"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: false
+  packages:
+    - name: "Hunspell"
+      package: hunspell
+      description: "Spell checker and morphological analyzer"
+    - name: "LibreOffice Fresh"
+      package: libreoffice-fresh
+      description: "Full-featured office productivity suite"
+    - name: "Hunspell Language Pack"
+      package: hunspell-$LOCALE
+      description: "Spell checking for your language"
+    - name: "TexMaths"
+      package: libreoffice-extension-texmaths
+      description: "LaTeX equation editor for LibreOffice"
+    - name: "Writer2LaTeX"
+      package: libreoffice-extension-writer2latex
+      description: "Export LibreOffice documents to LaTeX"
+
+- name: "Development Tools"
+  description: "Tools for coding and version control"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: false
+  packages:
+    - name: "Hugo"
+      package: hugo
+      description: "Fast static site generator written in Go"
+    - name: "Meld"
+      package: meld
+      description: "Visual diff and merge tool"
+    - name: "VSCodium"
+      package: vscodium-bin
+      description: "VS Code without Microsoft telemetry"
+    - name: "GitHub Desktop"
+      package: github-desktop
+      description: "Git GUI client for GitHub"
+
+- name: "Password Managers"
+  description: "Securely store and manage your passwords"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: false
+  packages:
+    - name: "KeePassXC"
+      package: keepassxc
+      description: "Cross-platform offline password manager"
+    - name: "Bitwarden"
+      package: bitwarden
+      description: "Open source cloud password manager"
+
+- name: "Android Development"
+  description: "Tools for Android device management and development"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: false
+  packages:
+    - name: "Heimdall"
+      package: heimdall
+      description: "Flash firmware to Samsung devices"
+    - name: "QtScrcpy"
+      package: qtscrcpy
+      description: "Display and control Android via USB/WiFi"
+    - name: "ADB Manager"
+      package: adbmanager
+      description: "Graphical ADB management tool"
+    - name: "Android udev Rules"
+      package: android-udev
+      description: "USB access rules for Android devices"
+    - name: "Android Tools"
+      package: android-tools
+      description: "ADB and fastboot utilities"
+    - name: "Android Platform Tools"
+      package: android-platform
+      description: "Core platform development tools"
+    - name: "Android SDK Platform Tools"
+      package: android-sdk-platform-tools
+      description: "Official SDK tools from Google"
+
+- name: "Graphics & Design"
+  description: "Image editing, 3D modeling and creative tools"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: false
+  packages:
+    - name: "GIMP"
+      package: gimp
+      description: "Powerful open source image editor"
+    - name: "Godot Engine"
+      package: godot
+      description: "Feature-packed 2D and 3D game engine"
+    - name: "Krita"
+      package: krita
+      description: "Professional digital painting application"
+    - name: "Inkscape"
+      package: inkscape
+      description: "Professional vector graphics editor"
+    - name: "Blender"
+      package: blender
+      description: "3D creation suite for modeling and animation"
+
+- name: "Audio Production"
+  description: "Music players and audio production software"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: false
+  packages:
+    - name: "mpv"
+      package: mpv
+      description: "Lightweight, powerful media player"
+    - name: "Amarok"
+      package: amarok
+      description: "Feature-rich music player for KDE"
+    - name: "Spotify"
+      package: spotify
+      description: "Music streaming service client"
+    - name: "Tenacity"
+      package: tenacity
+      description: "Multi-track audio editor (Audacity fork)"
+    - name: "JamesDSP"
+      package: jamesdsp
+      description: "Audio effects processor for PipeWire"
+    - name: "Easy Effects"
+      package: easyeffects
+      description: "Audio effects for PipeWire applications"
+
+- name: "Video Production"
+  description: "Video editing and conversion tools"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: false
+  packages:
+    - name: "MystiQ"
+      package: mystiq
+      description: "FFmpeg-based video converter with GUI"
+    - name: "MakeMKV"
+      package: makemkv
+      description: "DVD and Blu-ray to MKV converter"
+    - name: "Kdenlive"
+      package: kdenlive
+      description: "Professional non-linear video editor"
+    - name: "Avidemux"
+      package: avidemux-qt
+      description: "Simple video cutting and encoding"
+    - name: "MKVToolNix"
+      package: mkvtoolnix-gui
+      description: "Matroska file editing and inspection"
+    - name: "LosslessCut"
+      package: losslesscut-bin
+      description: "Fast lossless video/audio trimming"
+
+- name: "Additional Fonts"
+  description: "Extended font collections for better typography"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: false
+  packages:
+    - name: "Noto Fonts"
+      package: noto-fonts
+      description: "Google's font family covering all languages"
+    - name: "DejaVu Fonts"
+      package: ttf-dejavu
+      description: "Improved Bitstream Vera fonts"
+    - name: "Asian Fonts (>1GB)"
+      package: asian-fonts
+      description: "CJK (Chinese, Japanese, Korean) fonts"
+    - name: "Caladea"
+      package: ttf-caladea
+      description: "Metric-compatible Cambria replacement"
+    - name: "Carlito"
+      package: ttf-carlito
+      description: "Metric-compatible Calibri replacement"
+    - name: "Liberation Fonts"
+      package: ttf-liberation
+      description: "Metric-compatible MS fonts replacement"
+    - name: "Linux Libertine"
+      package: ttf-linux-libertine-g
+      description: "Elegant serif and sans-serif fonts"
+    - name: "Source Code Pro"
+      package: adobe-source-code-pro-fonts
+      description: "Monospace font for coding"
+    - name: "Source Serif Pro"
+      package: adobe-source-serif-pro-fonts
+      description: "Elegant serif font by Adobe"
