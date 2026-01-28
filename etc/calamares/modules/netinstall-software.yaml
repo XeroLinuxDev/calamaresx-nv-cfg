@@ -43,7 +43,7 @@
       package: ungoogled-chromium-bin
       description: "Chromium without Google services"
 
-- name: "BTRFS Support (Choose one)"
+- name: "BTRFS (Choose only one)"
   description: "In case of BTFRS select preferred method"
   critical: false
   hidden: false
