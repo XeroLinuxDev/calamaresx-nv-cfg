@@ -122,15 +122,6 @@ Page {
             spacing: 12
 
             Button {
-                id: logButton
-                text: qsTr("View Log", "@button")
-                icon.name: "document-open"
-                flat: !config.failed
-                highlighted: config.failed
-                onClicked: config.openLogFile()
-            }
-
-            Button {
                 id: closeButton
                 text: qsTr("Close Installer", "@button")
                 icon.name: "application-exit"
